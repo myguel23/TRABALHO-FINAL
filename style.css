@@ -1,0 +1,674 @@
+/* =========================
+RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+
+    position:fixed;
+    top:0;
+    width:100%;
+    height:80px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 8%;
+
+    background:#0d47a1;
+
+    z-index:1000;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+
+.logo{
+
+    color:white;
+    font-size:28px;
+    font-weight:700;
+
+}
+
+
+.logo span{
+
+    color:#ffc107;
+
+}
+
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+
+    margin:0 15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#ffc107;
+
+}
+
+
+
+/* =========================
+BOTÕES
+========================= */
+
+
+.btn{
+
+    display:inline-block;
+
+    background:#ffc107;
+
+    color:#000;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+.btn-secondary{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#0d47a1;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+/* =========================
+HERO
+========================= */
+
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,45,110,.75),
+    rgba(0,45,110,.75)
+    ),
+
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-content{
+
+    max-width:850px;
+
+    padding:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* =========================
+SEÇÕES
+========================= */
+
+
+section{
+
+    padding:90px 8%;
+
+}
+
+
+.titulo{
+
+    text-align:center;
+
+    font-size:38px;
+
+    color:#0d47a1;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:50px;
+
+}
+
+
+
+/* =========================
+SOBRE
+========================= */
+
+
+.sobre{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+
+.sobre img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+
+
+.texto-sobre h3{
+
+    font-size:30px;
+
+    color:#0d47a1;
+
+    margin-bottom:20px;
+
+}
+
+
+.texto-sobre p{
+
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* =========================
+CARDS
+========================= */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.icone{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card h3{
+
+    color:#0d47a1;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* =========================
+CURSOS
+========================= */
+
+
+.cursos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.curso{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+.curso img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.curso div{
+
+    padding:25px;
+
+}
+
+
+
+.curso h3{
+
+    color:#0d47a1;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.curso p{
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* =========================
+GALERIA
+========================= */
+
+
+.galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.galeria img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+
+.galeria img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* =========================
+MATRÍCULA
+========================= */
+
+
+.matricula{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #0d47a1,
+    #083b66
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.matricula h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.matricula p{
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* =========================
+FORMULÁRIO
+========================= */
+
+
+form{
+
+    max-width:600px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    font-size:16px;
+
+}
+
+
+
+textarea{
+
+    height:150px;
+
+}
+
+
+
+/* =========================
+FOOTER
+========================= */
+
+
+footer{
+
+    background:#083b66;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+footer p{
+
+    margin-top:10px;
+
+}
+
+
+
+/* =========================
+BOTÃO TOPO
+========================= */
+
+
+#topo{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ffc107;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    display:none;
+
+}
+
+
+
+/* =========================
+RESPONSIVO
+========================= */
+
+
+@media(max-width:900px){
+
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+
+nav{
+
+    margin:20px 0;
+
+}
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+
+.sobre{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
